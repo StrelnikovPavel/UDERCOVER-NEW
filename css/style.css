@@ -1,0 +1,3149 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* line 44, D:/#projects/верстка/undercover/scss/style.scss */
+.wrapper {
+			width: 100%;
+			min-height: 100%;
+			overflow: hidden;
+			display: flex;
+			font-size: 0;
+			flex-direction: column;
+}
+
+/* line 54, D:/#projects/верстка/undercover/scss/style.scss */
+* {
+			padding: 0;
+			margin: 0;
+			border: 0;
+}
+
+/* line 59, D:/#projects/верстка/undercover/scss/style.scss */
+*,
+*:before,
+*:after {
+			box-sizing: border-box;
+}
+
+/* line 66, D:/#projects/верстка/undercover/scss/style.scss */
+:focus,
+:active {
+			outline: none;
+}
+
+/* line 70, D:/#projects/верстка/undercover/scss/style.scss */
+a:focus,
+a:active {
+			outline: none;
+}
+
+/* line 74, D:/#projects/верстка/undercover/scss/style.scss */
+nav,
+footer,
+header,
+aside {
+			display: block;
+}
+
+/* line 80, D:/#projects/верстка/undercover/scss/style.scss */
+html,
+body {
+			background-color: #2c2c2c;
+			height: 100%;
+			width: 100%;
+			font-size: 100%;
+			line-height: 1;
+			font-size: 14px;
+			-ms-text-size-adjust: 100%;
+			-moz-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+}
+
+/* line 92, D:/#projects/верстка/undercover/scss/style.scss */
+input,
+button,
+textarea {
+			font-family: inherit;
+}
+
+/* line 97, D:/#projects/верстка/undercover/scss/style.scss */
+input::-ms-clear {
+			display: none;
+}
+
+/* line 100, D:/#projects/верстка/undercover/scss/style.scss */
+button {
+			cursor: pointer;
+}
+
+/* line 103, D:/#projects/верстка/undercover/scss/style.scss */
+button::-moz-focus-inner {
+			padding: 0;
+			border: 0;
+}
+
+/* line 107, D:/#projects/верстка/undercover/scss/style.scss */
+a a:visited {
+			text-decoration: none;
+}
+
+/* line 110, D:/#projects/верстка/undercover/scss/style.scss */
+li {
+			list-style: none;
+}
+
+/* line 113, D:/#projects/верстка/undercover/scss/style.scss */
+img {
+			vertical-align: top;
+}
+
+/* line 116, D:/#projects/верстка/undercover/scss/style.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+			font-size: inherit;
+			font-family: 400;
+}
+
+/* line 128, D:/#projects/верстка/undercover/scss/style.scss */
+.container {
+			max-width: 1520px;
+			margin: 0 auto;
+			padding: 0px 10px;
+			width: 100%;
+}
+
+@media (max-width: 1532px) {
+			/* line 128, D:/#projects/верстка/undercover/scss/style.scss */
+			.container {
+						max-width: 970px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 128, D:/#projects/верстка/undercover/scss/style.scss */
+			.container {
+						max-width: 750px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 128, D:/#projects/верстка/undercover/scss/style.scss */
+			.container {
+						max-width: none;
+						padding: 0 10px;
+			}
+}
+
+@media (max-width: 479.98px) {
+			/* line 128, D:/#projects/верстка/undercover/scss/style.scss */
+			.container {
+						padding: 0 5px;
+			}
+}
+
+/* line 150, D:/#projects/верстка/undercover/scss/style.scss */
+.ibg {
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			position: relative;
+}
+
+/* line 157, D:/#projects/верстка/undercover/scss/style.scss */
+.ibg img {
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			visibility: hidden;
+}
+
+/* line 1, D:/#projects/верстка/undercover/scss/contacts.scss */
+.contacts {
+			padding: 100px 0px 100px 0px;
+}
+
+@media (max-width: 992.98px) {
+			/* line 1, D:/#projects/верстка/undercover/scss/contacts.scss */
+			.contacts {
+						padding: 50px 0px 50px 0px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 1, D:/#projects/верстка/undercover/scss/contacts.scss */
+			.contacts {
+						padding: 30px 0px 30px 0px;
+			}
+}
+
+/* line 13, D:/#projects/верстка/undercover/scss/contacts.scss */
+.contacts__body {
+			position: relative;
+}
+
+/* line 17, D:/#projects/верстка/undercover/scss/contacts.scss */
+.contacts__title {
+			margin: 0px 0px 100px 0px;
+}
+
+@media (max-width: 1532px) {
+			/* line 17, D:/#projects/верстка/undercover/scss/contacts.scss */
+			.contacts__title {
+						margin: 0px 0px 70px 0px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 17, D:/#projects/верстка/undercover/scss/contacts.scss */
+			.contacts__title {
+						margin: 0px 0px 30px 0px;
+			}
+}
+
+/* line 30, D:/#projects/верстка/undercover/scss/contacts.scss */
+.contacts__bg {
+			filter: contrast(101.5%);
+			display: block;
+			height: 100%;
+			width: 100%;
+			padding: 0px 0px 41% 0px;
+}
+
+@media (max-width: 767.98px) {
+			/* line 30, D:/#projects/верстка/undercover/scss/contacts.scss */
+			.contacts__bg {
+						display: none;
+			}
+}
+
+/* line 41, D:/#projects/верстка/undercover/scss/contacts.scss */
+.content-contacts {
+			position: relative;
+			display: flex;
+			font-size: 0;
+}
+
+@media (max-width: 767.98px) {
+			/* line 41, D:/#projects/верстка/undercover/scss/contacts.scss */
+			.content-contacts {
+						flex-wrap: wrap;
+						justify-content: center;
+			}
+}
+
+/* line 49, D:/#projects/верстка/undercover/scss/contacts.scss */
+.content-contacts__column {
+			flex: 0 1 33.333%;
+			position: relative;
+			text-align: center;
+}
+
+@media (max-width: 767.98px) {
+			/* line 49, D:/#projects/верстка/undercover/scss/contacts.scss */
+			.content-contacts__column {
+						flex: 0 1 50%;
+						margin: 0px 0px 30px 0px;
+			}
+}
+
+/* line 59, D:/#projects/верстка/undercover/scss/contacts.scss */
+.content-contacts__title {
+			display: block;
+			color: #b69b67;
+			font-size: 30px;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			text-transform: uppercase;
+			margin: 0px 0px 50px 0px;
+			text-decoration: none;
+			position: relative;
+			padding: 10px 0px;
+			display: -ms-inline-flex;
+			display: -moz-inline-flex;
+			display: -o-inline-flex;
+			display: inline-flex;
+			transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 1532px) {
+			/* line 59, D:/#projects/верстка/undercover/scss/contacts.scss */
+			.content-contacts__title {
+						margin: 0px 0px 20px 0px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 59, D:/#projects/верстка/undercover/scss/contacts.scss */
+			.content-contacts__title {
+						font-size: 25px;
+			}
+}
+
+/* line 78, D:/#projects/верстка/undercover/scss/contacts.scss */
+.content-contacts__title:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: #b69b67;
+}
+
+/* line 87, D:/#projects/верстка/undercover/scss/contacts.scss */
+.content-contacts__title:hover {
+			color: #b69b67;
+			transition: all 0.3s ease 0s;
+}
+
+/* line 94, D:/#projects/верстка/undercover/scss/contacts.scss */
+.content-contacts__phone > a {
+			color: #b4b4b4;
+			font-size: 30px;
+			font-family: "Ubuntu", sans-serif;
+			text-transform: uppercase;
+			text-decoration: none;
+			display: block;
+}
+
+/* line 101, D:/#projects/верстка/undercover/scss/contacts.scss */
+.content-contacts__phone > a:first-child {
+			margin: 0px 0px 25px 0px;
+}
+
+@media (max-width: 992.98px) {
+			/* line 101, D:/#projects/верстка/undercover/scss/contacts.scss */
+			.content-contacts__phone > a:first-child {
+						margin: 0px 0px 15px 0px;
+			}
+}
+
+@media (max-width: 1532px) {
+			/* line 94, D:/#projects/верстка/undercover/scss/contacts.scss */
+			.content-contacts__phone > a {
+						font-size: 20px;
+			}
+}
+
+/* line 114, D:/#projects/верстка/undercover/scss/contacts.scss */
+.content-contacts__email > a {
+			color: #b4b4b4;
+			font-size: 30px;
+			font-family: "Ubuntu", sans-serif;
+			text-transform: uppercase;
+			text-decoration: none;
+			display: block;
+}
+
+/* line 121, D:/#projects/верстка/undercover/scss/contacts.scss */
+.content-contacts__email > a:first-child {
+			margin: 0px 0px 25px 0px;
+}
+
+@media (max-width: 992.98px) {
+			/* line 121, D:/#projects/верстка/undercover/scss/contacts.scss */
+			.content-contacts__email > a:first-child {
+						margin: 0px 0px 15px 0px;
+			}
+}
+
+@media (max-width: 1532px) {
+			/* line 114, D:/#projects/верстка/undercover/scss/contacts.scss */
+			.content-contacts__email > a {
+						font-size: 20px;
+			}
+}
+
+@media (max-width: 360px) {
+			/* line 114, D:/#projects/верстка/undercover/scss/contacts.scss */
+			.content-contacts__email > a {
+						font-size: 18px;
+			}
+}
+
+/* line 136, D:/#projects/верстка/undercover/scss/contacts.scss */
+.content-contacts__adress {
+			text-align: center;
+			position: relative;
+}
+
+/* line 139, D:/#projects/верстка/undercover/scss/contacts.scss */
+.content-contacts__adress > p {
+			color: #b4b4b4;
+			font-size: 30px;
+			font-family: "Ubuntu", sans-serif;
+			text-transform: uppercase;
+}
+
+@media (max-width: 1532px) {
+			/* line 139, D:/#projects/верстка/undercover/scss/contacts.scss */
+			.content-contacts__adress > p {
+						font-size: 20px;
+			}
+}
+
+/* line 1, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.feedback {
+			flex: 0 1 50%;
+			position: relative;
+}
+
+@media (max-width: 767.98px) {
+			/* line 1, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.feedback {
+						flex: 1 1 100%;
+			}
+}
+
+/* line 8, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.feedback__container {
+			max-width: 750px;
+			position: relative;
+			width: 100%;
+			margin: 0 auto;
+}
+
+/* line 18, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.feedback-contacts {
+			padding: 0px 0px 20px 0px;
+}
+
+@media (max-width: 767.98px) {
+			/* line 18, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.feedback-contacts {
+						padding: 20px 0px 20px 0px;
+			}
+}
+
+/* line 27, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.feedback-contacts__body {
+			position: relative;
+			flex: 1 1 auto;
+			display: flex;
+			font-size: 0;
+}
+
+@media (max-width: 767.98px) {
+			/* line 27, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.feedback-contacts__body {
+						flex-direction: column;
+			}
+}
+
+/* line 38, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.body-feedback__title {
+			margin: 0px 0px 50px 0px;
+}
+
+@media (max-width: 767.98px) {
+			/* line 38, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.body-feedback__title {
+						margin: 0px 0px 30px 0px;
+			}
+}
+
+/* line 48, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.content-body-feedback {
+			display: flex;
+			font-size: 0;
+			flex-direction: column;
+			position: relative;
+}
+
+/* line 56, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.content-body-feedback__info {
+			display: flex;
+			font-size: 0;
+			position: relative;
+			padding: 0px 0px 30px 0px;
+}
+
+/* line 60, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.content-body-feedback__info:after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: #b69b67;
+			bottom: 0;
+			left: 0;
+			margin: 0px 0px 15px 0px;
+}
+
+/* line 72, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.content-body-feedback__img {
+			margin: 0px 30px 0px 0px;
+}
+
+/* line 74, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.content-body-feedback__img img {
+			max-width: 100%;
+}
+
+@media (max-width: 992.98px) {
+			/* line 72, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.content-body-feedback__img {
+						margin: 0px 15px 0px 0px;
+			}
+}
+
+/* line 82, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.content-body-feedback__text {
+			font-size: 30px;
+			max-width: 585px;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			color: #b4b4b4;
+}
+
+@media (max-width: 1532px) {
+			/* line 82, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.content-body-feedback__text {
+						font-size: 20px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 82, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.content-body-feedback__text {
+						font-size: 18px;
+			}
+}
+
+/* line 96, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.content-body-feedback__link {
+			font-size: 30px;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			color: #b69b67;
+			text-decoration: none;
+			text-transform: uppercase;
+			text-align: right;
+			margin: 0px 0px 50px 0px;
+}
+
+@media (max-width: 1532px) {
+			/* line 96, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.content-body-feedback__link {
+						font-size: 20px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 96, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.content-body-feedback__link {
+						margin: 0px 0px 30px 0px;
+			}
+}
+
+/* line 113, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.footer-body-feedback {
+			text-align: center;
+}
+
+/* line 116, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.footer-body-feedback__link {
+			font-size: 15px;
+			cursor: pointer;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			color: #b4b4b4;
+			text-decoration: none;
+			text-transform: uppercase;
+			transition: all 0.3s ease 0s;
+}
+
+/* line 125, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.footer-body-feedback__link:hover {
+			color: #b69b67;
+			transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 992.98px) {
+			/* line 116, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.footer-body-feedback__link {
+						font-size: 13px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 116, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.footer-body-feedback__link {
+						margin: 0px 0px 10px 0px;
+			}
+}
+
+/* line 137, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.contactus {
+			position: relative;
+			flex: 0 1 50%;
+}
+
+@media (max-width: 767.98px) {
+			/* line 137, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.contactus {
+						flex: 0 1 100%;
+			}
+}
+
+/* line 144, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.contactus__container {
+			max-width: 480px;
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+}
+
+@media (max-width: 1532px) {
+			/* line 144, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.contactus__container {
+						max-width: 400px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 144, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.contactus__container {
+						max-width: 330px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 144, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.contactus__container {
+						max-width: none;
+			}
+}
+
+/* line 160, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.contactus__title {
+			margin: 0px 0px 50px 0px;
+}
+
+/* line 164, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.contactus__btn {
+			padding: 0px 0px 0px 0px;
+			position: relative;
+			text-align: center;
+			z-index: 2;
+}
+
+/* line 169, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.contactus__btn > a {
+			color: #303030;
+			text-decoration: none;
+			text-transform: uppercase;
+			padding: 0px 80px;
+			position: relative;
+			display: -ms-inline-flex;
+			display: -moz-inline-flex;
+			display: -o-inline-flex;
+			display: inline-flex;
+			background-color: #b69b67;
+}
+
+@media (max-width: 1532px) {
+			/* line 169, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.contactus__btn > a {
+						padding: 0px 50px;
+			}
+}
+
+@media (max-width: 1532px) {
+			/* line 169, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.contactus__btn > a {
+						font-size: 20px;
+			}
+}
+
+/* line 186, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.contactus__bg {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			filter: contrast(90%);
+}
+
+/* line 193, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.form-contactus {
+			position: relative;
+			z-index: 2;
+}
+
+/* line 197, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.form-contactus__name {
+			margin: 0px 0px 25px 0px;
+}
+
+/* line 199, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.form-contactus__name input {
+			width: 100%;
+			height: 70px;
+			background: transparent;
+			border: 1px solid #b4b4b4;
+			font-size: 30px;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+}
+
+@media (max-width: 992.98px) {
+			/* line 199, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.form-contactus__name input {
+						font-size: 20px;
+						height: 50px;
+			}
+}
+
+/* line 211, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.form-contactus__name input::placeholder {
+			font-size: 30px;
+			color: #454545;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			line-height: calc(100 / 30);
+			padding: 0px 0px 0px 25px;
+}
+
+@media (max-width: 992.98px) {
+			/* line 211, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.form-contactus__name input::placeholder {
+						font-size: 20px;
+			}
+}
+
+/* line 225, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.form-contactus__email {
+			margin: 0px 0px 25px 0px;
+}
+
+/* line 227, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.form-contactus__email input {
+			width: 100%;
+			height: 70px;
+			background: transparent;
+			border: 1px solid #b4b4b4;
+			font-size: 30px;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+}
+
+@media (max-width: 992.98px) {
+			/* line 227, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.form-contactus__email input {
+						font-size: 20px;
+						height: 50px;
+			}
+}
+
+/* line 239, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.form-contactus__email input::placeholder {
+			font-size: 30px;
+			color: #454545;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			line-height: calc(100 / 30);
+			padding: 0px 0px 0px 25px;
+}
+
+@media (max-width: 992.98px) {
+			/* line 239, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.form-contactus__email input::placeholder {
+						font-size: 20px;
+			}
+}
+
+/* line 252, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.form-contactus textarea {
+			width: 100%;
+			background-color: transparent;
+			border: 1px solid #b4b4b4;
+			margin: 0px 0px 25px 0px;
+}
+
+@media (max-width: 992.98px) {
+			/* line 252, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.form-contactus textarea {
+						font-size: 20px;
+						height: 200px;
+			}
+}
+
+/* line 261, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+.form-contactus textarea::placeholder {
+			font-size: 30px;
+			color: #454545;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			padding: 25px 0px 0px 25px;
+}
+
+@media (max-width: 992.98px) {
+			/* line 261, D:/#projects/верстка/undercover/scss/feedbacks.scss */
+			.form-contactus textarea::placeholder {
+						font-size: 20px;
+			}
+}
+
+/* line 6, D:/#projects/верстка/undercover/scss/footer.scss */
+.footer__body {
+			display: flex;
+			font-size: 0;
+			flex-direction: column;
+			text-align: center;
+}
+
+/* line 13, D:/#projects/верстка/undercover/scss/footer.scss */
+.footer__title {
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			font-size: 60px;
+			text-transform: uppercase;
+			position: absolute;
+			white-space: nowrap;
+			left: 50%;
+			transform: translate(-50%, 0);
+			color: #ab9c85;
+}
+
+@media (max-width: 1800px) {
+			/* line 13, D:/#projects/верстка/undercover/scss/footer.scss */
+			.footer__title {
+						font-size: 50px;
+			}
+}
+
+@media (max-width: 1532px) {
+			/* line 13, D:/#projects/верстка/undercover/scss/footer.scss */
+			.footer__title {
+						white-space: pre-line;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 13, D:/#projects/верстка/undercover/scss/footer.scss */
+			.footer__title {
+						position: relative;
+						margin: 0px 0px 30px 0px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 13, D:/#projects/верстка/undercover/scss/footer.scss */
+			.footer__title {
+						font-size: 25px;
+			}
+}
+
+/* line 38, D:/#projects/верстка/undercover/scss/footer.scss */
+.footer__img {
+			filter: contrast(105%);
+			display: block;
+			width: 100%;
+			padding: 0px 0px 51% 0px;
+}
+
+/* line 47, D:/#projects/верстка/undercover/scss/footer.scss */
+.menu-footer__body {
+			margin: 180px 0px 0px 0px;
+}
+
+@media (max-width: 992.98px) {
+			/* line 47, D:/#projects/верстка/undercover/scss/footer.scss */
+			.menu-footer__body {
+						margin: 0px 0px 0px 0px;
+			}
+}
+
+/* line 54, D:/#projects/верстка/undercover/scss/footer.scss */
+.menu-footer__list {
+			display: flex;
+			font-size: 0;
+			position: relative;
+			justify-content: center;
+}
+
+@media (max-width: 1532px) {
+			/* line 54, D:/#projects/верстка/undercover/scss/footer.scss */
+			.menu-footer__list {
+						flex-wrap: wrap;
+			}
+}
+
+/* line 61, D:/#projects/верстка/undercover/scss/footer.scss */
+.menu-footer__list li {
+			margin: 0px 27px 20px 27px;
+}
+
+/* line 63, D:/#projects/верстка/undercover/scss/footer.scss */
+.menu-footer__list li:first-child {
+			margin: 0px 27px 20px 0px;
+}
+
+/* line 66, D:/#projects/верстка/undercover/scss/footer.scss */
+.menu-footer__list li:last-child {
+			margin: 0px 0px 20px 27px;
+}
+
+/* line 72, D:/#projects/верстка/undercover/scss/footer.scss */
+.menu-footer__link {
+			color: #b4b4b4;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 15px;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			transition: all 0.3s ease 0s;
+			position: relative;
+			padding: 10px 0px;
+}
+
+/* line 82, D:/#projects/верстка/undercover/scss/footer.scss */
+.menu-footer__link:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			left: 0;
+			top: 0;
+			background-color: #ab9c85;
+			transition: all .3s ease 0s;
+			transform: scale(0);
+}
+
+/* line 93, D:/#projects/верстка/undercover/scss/footer.scss */
+.menu-footer__link:hover {
+			color: #ab9c85;
+			transition: all 0.3s ease 0s;
+}
+
+/* line 97, D:/#projects/верстка/undercover/scss/footer.scss */
+.menu-footer__link:hover:before {
+			transition: all 0.3s ease 0s;
+			transform: scale(1);
+}
+
+/* line 1, D:/#projects/верстка/undercover/scss/header.scss */
+.header {
+			flex: 1 1 auto;
+			position: relative;
+			display: flex;
+			font-size: 0;
+			justify-content: center;
+			text-align: center;
+			height: 100vh;
+}
+
+/* line 10, D:/#projects/верстка/undercover/scss/header.scss */
+.header__container {
+			flex: 1 1 auto;
+			position: absolute;
+}
+
+/* line 15, D:/#projects/верстка/undercover/scss/header.scss */
+.header__body {
+			display: flex;
+			font-size: 0;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			height: 100vh;
+}
+
+/* line 23, D:/#projects/верстка/undercover/scss/header.scss */
+.header__title {
+			position: relative;
+			margin: 20px 0px 0px 0px;
+}
+
+/* line 26, D:/#projects/верстка/undercover/scss/header.scss */
+.header__title h1 {
+			color: #b69b67;
+			font-size: 60px;
+			font-family: "Playfair Display SC", serif;
+			font-weight: 400;
+			position: relative;
+			display: -ms-inline-flex;
+			display: -moz-inline-flex;
+			display: -o-inline-flex;
+			display: inline-flex;
+}
+
+/* line 33, D:/#projects/верстка/undercover/scss/header.scss */
+.header__title h1:after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			top: 0;
+			left: 0;
+			background-color: #b69b67;
+			display: block;
+}
+
+@media (max-width: 479.98px) {
+			/* line 26, D:/#projects/верстка/undercover/scss/header.scss */
+			.header__title h1 {
+						font-size: 45px;
+			}
+}
+
+/* line 49, D:/#projects/верстка/undercover/scss/header.scss */
+.content-header {
+			position: relative;
+}
+
+/* line 53, D:/#projects/верстка/undercover/scss/header.scss */
+.content-header__bg img {
+			max-width: 100%;
+}
+
+@media (max-width: 1532px) {
+			/* line 53, D:/#projects/верстка/undercover/scss/header.scss */
+			.content-header__bg img {
+						width: 220px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 53, D:/#projects/верстка/undercover/scss/header.scss */
+			.content-header__bg img {
+						width: 200px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 53, D:/#projects/верстка/undercover/scss/header.scss */
+			.content-header__bg img {
+						width: 150px;
+			}
+}
+
+/* line 67, D:/#projects/верстка/undercover/scss/header.scss */
+.content-header__text {
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			color: #393939;
+			text-transform: uppercase;
+			font-size: 60px;
+			font-size: calc(40px + 20 * (100vw / 1520));
+			position: relative;
+}
+
+@media (max-width: 768px) {
+			/* line 67, D:/#projects/верстка/undercover/scss/header.scss */
+			.content-header__text {
+						font-size: calc(40px + (20 + (20 * 0.7)) * ((100vw - 320px) / 1520));
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 67, D:/#projects/верстка/undercover/scss/header.scss */
+			.content-header__text {
+						color: #cfb481;
+			}
+}
+
+/* line 81, D:/#projects/верстка/undercover/scss/header.scss */
+.content-header__text .c-1 {
+			color: #cfb481;
+}
+
+/* line 84, D:/#projects/верстка/undercover/scss/header.scss */
+.content-header__text .c-2 {
+			color: #545351;
+}
+
+@media (max-width: 992.98px) {
+			/* line 84, D:/#projects/верстка/undercover/scss/header.scss */
+			.content-header__text .c-2 {
+						color: #cfb481;
+			}
+}
+
+/* line 90, D:/#projects/верстка/undercover/scss/header.scss */
+.content-header__text .c-3 {
+			color: #7a7263;
+}
+
+@media (max-width: 992.98px) {
+			/* line 90, D:/#projects/верстка/undercover/scss/header.scss */
+			.content-header__text .c-3 {
+						color: #cfb481;
+			}
+}
+
+/* line 100, D:/#projects/верстка/undercover/scss/header.scss */
+.menu__body {
+			display: none;
+}
+
+/* line 102, D:/#projects/верстка/undercover/scss/header.scss */
+.menu__body.active {
+			display: block;
+			width: 100%;
+			height: 125%;
+			z-index: 2;
+			position: absolute;
+			border: 1px solid #454545;
+			background-color: #2c2c2c;
+}
+
+@media (max-width: 1532px) {
+			/* line 102, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu__body.active {
+						height: 120%;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 102, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu__body.active {
+						height: 105%;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 102, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu__body.active {
+						height: 120%;
+			}
+}
+
+@media (max-width: 590px) {
+			/* line 102, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu__body.active {
+						height: 90%;
+			}
+}
+
+/* line 124, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .icon-menu {
+			display: block;
+			position: absolute;
+			right: 0;
+			width: 78px;
+			height: 80px;
+			border: 1px solid #454545;
+			cursor: pointer;
+			z-index: 5;
+}
+
+@media (max-width: 1532px) {
+			/* line 124, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .icon-menu {
+						height: 60px;
+						width: 58px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 124, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .icon-menu {
+						height: 40px;
+						width: 38px;
+			}
+}
+
+/* line 141, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .icon-menu:hover {
+			border: 1px solid #b69b67;
+}
+
+/* line 144, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .icon-menu:hover span {
+			background-color: #b69b67;
+}
+
+/* line 147, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .icon-menu._active {
+			display: none;
+}
+
+@media (max-width: 790px) {
+			/* line 147, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .icon-menu._active {
+						display: block;
+			}
+}
+
+/* line 153, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .icon-menu span {
+			transition: all 0.3s ease;
+			top: calc(50% - 1px);
+			left: 50%;
+			transform: translate(-50%, 0);
+			position: absolute;
+			background-color: #b4b4b4;
+			height: 2px;
+			width: 50px;
+}
+
+@media (max-width: 1532px) {
+			/* line 153, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .icon-menu span {
+						width: 35px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 153, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .icon-menu span {
+						width: 25px;
+			}
+}
+
+/* line 168, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .icon-menu span:first-child {
+			top: 20px;
+}
+
+@media (max-width: 1532px) {
+			/* line 168, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .icon-menu span:first-child {
+						top: 15px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 168, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .icon-menu span:first-child {
+						top: 10px;
+			}
+}
+
+/* line 177, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .icon-menu span:last-child {
+			top: auto;
+			bottom: 20px;
+}
+
+@media (max-width: 1532px) {
+			/* line 177, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .icon-menu span:last-child {
+						bottom: 15px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 177, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .icon-menu span:last-child {
+						bottom: 10px;
+			}
+}
+
+/* line 189, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .icon-menu.active span {
+			transform: scale(0);
+}
+
+/* line 191, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .icon-menu.active span:first-child {
+			transform: rotate(-45deg);
+			top: calc(50% - 1px);
+			left: 20%;
+}
+
+/* line 196, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .icon-menu.active span:last-child {
+			transform: rotate(45deg);
+			bottom: calc(50% - 1px);
+			left: 20%;
+}
+
+/* line 205, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__content {
+			max-width: 1175px;
+			margin: 0 auto;
+			width: 100%;
+			display: flex;
+			font-size: 0;
+			flex-direction: column;
+			justify-content: space-around;
+			height: 100%;
+}
+
+@media (max-width: 590px) {
+			/* line 205, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__content {
+						height: 0;
+						flex: none;
+						justify-content: stretch;
+			}
+}
+
+@media (max-width: 1532px) {
+			/* line 205, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__content {
+						max-width: 850px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 205, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__content {
+						max-width: 650px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 205, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__content {
+						padding: 0px 10px;
+			}
+}
+
+/* line 227, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__content.active {
+			display: none;
+}
+
+/* line 232, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__title {
+			margin: 0px 0px 10px 0px;
+}
+
+@media (max-width: 1532px) {
+			/* line 232, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__title {
+						font-size: 50px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 232, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__title {
+						font-size: 40px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 232, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__title {
+						font-size: 30px;
+			}
+}
+
+/* line 245, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__row {
+			display: flex;
+			font-size: 0;
+}
+
+@media (max-width: 590px) {
+			/* line 245, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__row {
+						flex-direction: column;
+			}
+}
+
+/* line 252, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__column {
+			flex: 0 1 25%;
+}
+
+/* line 254, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__column:nth-child(2) {
+			flex: 1 1 auto;
+}
+
+@media (max-width: 590px) {
+			/* line 254, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__column:nth-child(2) {
+						flex: none;
+						margin: 20px 0px 0px 0px;
+			}
+}
+
+/* line 261, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__column:last-child {
+			flex: 0 1 480px;
+			position: relative;
+}
+
+@media (max-width: 1532px) {
+			/* line 261, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__column:last-child {
+						flex: 0 1 350px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 261, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__column:last-child {
+						margin: 15px 0px 0px 0px;
+						flex: 0 1 300px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 261, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__column:last-child {
+						flex: 0 1 250px;
+			}
+}
+
+/* line 277, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__list {
+			display: flex;
+			font-size: 0;
+			flex-direction: column;
+			text-align: left;
+}
+
+@media (max-width: 590px) {
+			/* line 277, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__list {
+						flex-direction: row;
+						flex-wrap: wrap;
+			}
+}
+
+/* line 285, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__list li {
+			margin: 15px 0px 15px 0px;
+}
+
+@media (max-width: 1532px) {
+			/* line 285, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__list li {
+						margin: 10px 0px 10px 0px;
+			}
+}
+
+@media (max-width: 590px) {
+			/* line 285, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__list li {
+						margin: 10px 10px 10px 10px;
+			}
+}
+
+/* line 296, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__link {
+			font-size: 30px;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			color: #b4b4b4;
+			transition: all 0.3s ease 0s;
+			text-transform: uppercase;
+			text-decoration: none;
+			position: relative;
+			padding: 5px 0px;
+}
+
+@media (max-width: 1532px) {
+			/* line 296, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__link {
+						font-size: 20px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 296, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__link {
+						font-size: 15px;
+			}
+}
+
+/* line 312, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__link:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: #b69b67;
+			top: 0;
+			left: 0;
+			transform: scale(0);
+			transition: all 0.3s ease 0s;
+}
+
+/* line 323, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__link:hover:before {
+			transform: scale(1);
+			transition: all 0.3s ease 0s;
+}
+
+/* line 327, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__link:hover {
+			color: #b69b67;
+			transition: all 0.3s ease 0s;
+}
+
+/* line 333, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__item {
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			color: #b4b4b4;
+			font-size: 30px;
+			transition: all 0.3s ease 0s;
+			text-transform: uppercase;
+			text-decoration: none;
+}
+
+@media (max-width: 1532px) {
+			/* line 333, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__item {
+						font-size: 20px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 333, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__item {
+						font-size: 15px;
+			}
+}
+
+/* line 347, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__item:hover {
+			color: #b69b67;
+			transition: all 0.3s ease 0s;
+}
+
+/* line 353, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__bg {
+			position: absolute;
+			width: 100%;
+			height: 95%;
+			left: 0;
+			top: 0;
+			filter: contrast(83%);
+}
+
+@media (max-width: 590px) {
+			/* line 353, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__bg {
+						display: none;
+			}
+}
+
+/* line 365, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__search {
+			position: relative;
+			z-index: 2;
+}
+
+/* line 368, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__search input {
+			width: 100%;
+			padding: 0;
+			height: 35px;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			outline: none;
+			background: none;
+			color: #fff;
+			font-size: 20px;
+			border-bottom: 1px solid #454545;
+}
+
+@media (max-width: 1532px) {
+			/* line 368, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__search input {
+						font-size: 15px;
+			}
+}
+
+/* line 382, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .body-menu__search input::placeholder {
+			font-size: 30px;
+			color: #454545;
+			text-transform: uppercase;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+}
+
+@media (max-width: 1532px) {
+			/* line 382, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .body-menu__search input::placeholder {
+						font-size: 15px;
+			}
+}
+
+/* line 398, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .sing-up__body {
+			display: none;
+			background-color: #2c2c2c;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, 0);
+			max-width: 850px;
+			padding: 0px 10px;
+			margin: 0 auto;
+			width: 100%;
+			z-index: 6;
+			border: 1px solid #b4b4b4;
+}
+
+/* line 410, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .sing-up__body._active {
+			display: block;
+}
+
+@media (max-width: 1532px) {
+			/* line 398, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .sing-up__body {
+						max-width: 800px;
+			}
+}
+
+/* line 418, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .sing-up__content {
+			max-width: 750px;
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+			top: 0;
+			left: 0;
+			display: flex;
+			font-size: 0;
+			flex-direction: column;
+			justify-content: space-around;
+}
+
+@media (max-width: 1532px) {
+			/* line 430, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .sing-up__title {
+						font-size: 50px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 430, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .sing-up__title {
+						font-size: 40px;
+			}
+}
+
+/* line 441, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-up__title {
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			font-size: 30px;
+			color: #b4b4b4;
+			text-transform: uppercase;
+			line-height: calc(100 / 30);
+}
+
+@media (max-width: 1532px) {
+			/* line 441, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .info-sing-up__title {
+						font-size: 20px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 441, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .info-sing-up__title {
+						line-height: calc(50 / 20);
+			}
+}
+
+/* line 456, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-up__item {
+			display: flex;
+			font-size: 0;
+			justify-content: space-between;
+			position: relative;
+}
+
+@media (max-width: 680px) {
+			/* line 456, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .info-sing-up__item {
+						flex-wrap: wrap;
+						flex: 0 1 25%;
+						justify-content: space-around;
+			}
+}
+
+/* line 467, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-up__btn {
+			margin: 0px 2px 10px 2px;
+}
+
+@media (max-width: 1532px) {
+			/* line 467, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .info-sing-up__btn {
+						font-size: 20px;
+			}
+}
+
+@media (max-width: 416px) {
+			/* line 467, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .info-sing-up__btn {
+						width: 100%;
+			}
+}
+
+/* line 475, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-up__btn:first-child {
+			border: 1px solid #3b5998;
+			color: #3b5998;
+			text-decoration: none;
+			margin: 0px 2px 10px 0px;
+			transition: all 0.4s ease 0s;
+}
+
+/* line 481, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-up__btn:first-child:hover {
+			transition: all 0.4s ease 0s;
+			background-color: #3b5998;
+			color: #303030;
+}
+
+/* line 487, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-up__btn:nth-child(2) {
+			border: 1px solid #dd4b39;
+			color: #dd4b39;
+			text-decoration: none;
+}
+
+/* line 491, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-up__btn:nth-child(2):hover {
+			transition: all 0.4s ease 0s;
+			background-color: #dd4b39;
+			color: #303030;
+}
+
+/* line 497, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-up__btn:last-child {
+			border: 1px solid #1da1f2;
+			color: #1da1f2;
+			text-decoration: none;
+			margin: 0px 0px 10px 2px;
+}
+
+/* line 502, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-up__btn:last-child:hover {
+			transition: all 0.4s ease 0s;
+			background-color: #1da1f2;
+			color: #303030;
+}
+
+/* line 512, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-up__title {
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			font-size: 30px;
+			color: #b4b4b4;
+			line-height: calc(100 / 30);
+			text-transform: uppercase;
+}
+
+@media (max-width: 1532px) {
+			/* line 512, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-up__title {
+						font-size: 20px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 512, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-up__title {
+						line-height: calc(50 / 20);
+			}
+}
+
+@media (max-width: 376px) {
+			/* line 512, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-up__title {
+						line-height: calc(30 / 20);
+			}
+}
+
+/* line 530, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-up__name {
+			margin: 0px 0px 25px 0px;
+}
+
+@media (max-width: 1532px) {
+			/* line 530, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-up__name {
+						margin: 0px 0px 15px 0px;
+			}
+}
+
+/* line 535, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-up__name input {
+			width: 100%;
+			border: 1px solid #b4b4b4;
+			background: #2c2c2c;
+			height: 70px;
+			color: #454545;
+			font-size: 30px;
+}
+
+@media (max-width: 1532px) {
+			/* line 535, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-up__name input {
+						height: 50px;
+						font-size: 20px;
+			}
+}
+
+/* line 546, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-up__name input::placeholder {
+			color: #454545;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			font-size: 30px;
+			padding: 0px 0px 0px 25px;
+}
+
+@media (max-width: 1532px) {
+			/* line 546, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-up__name input::placeholder {
+						font-size: 20px;
+			}
+}
+
+/* line 559, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-up__email {
+			margin: 0px 0px 25px 0px;
+}
+
+@media (max-width: 1532px) {
+			/* line 559, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-up__email {
+						margin: 0px 0px 15px 0px;
+			}
+}
+
+/* line 564, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-up__email input {
+			width: 100%;
+			border: 1px solid #b4b4b4;
+			background: #2c2c2c;
+			height: 70px;
+			color: #454545;
+			font-size: 30px;
+}
+
+@media (max-width: 1532px) {
+			/* line 564, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-up__email input {
+						height: 50px;
+						font-size: 20px;
+			}
+}
+
+/* line 575, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-up__email input::placeholder {
+			color: #454545;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			font-size: 30px;
+			padding: 0px 0px 0px 25px;
+}
+
+@media (max-width: 1532px) {
+			/* line 575, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-up__email input::placeholder {
+						font-size: 20px;
+			}
+}
+
+/* line 588, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-up__password {
+			margin: 0px 0px 3% 0px;
+			display: flex;
+			font-size: 0;
+			justify-content: space-between;
+}
+
+@media (max-width: 500px) {
+			/* line 588, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-up__password {
+						display: block;
+			}
+}
+
+/* line 596, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-up__password input {
+			width: 65%;
+			border: 1px solid #b4b4b4;
+			background: #2c2c2c;
+			height: 70px;
+			color: #454545;
+			font-size: 30px;
+}
+
+@media (max-width: 1532px) {
+			/* line 596, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-up__password input {
+						height: 50px;
+						font-size: 20px;
+						width: 70%;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 596, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-up__password input {
+						width: 68.5%;
+			}
+}
+
+@media (max-width: 500px) {
+			/* line 596, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-up__password input {
+						width: 100%;
+						margin: 0px 0px 15px 0px;
+			}
+}
+
+/* line 615, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-up__password input::placeholder {
+			color: #454545;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			font-size: 30px;
+			padding: 0px 0px 0px 25px;
+}
+
+@media (max-width: 1532px) {
+			/* line 615, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-up__password input::placeholder {
+						font-size: 20px;
+			}
+}
+
+/* line 628, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-up__btn {
+			margin: 0px 0px 0px 30px;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #303030;
+			display: -ms-inline-flex;
+			display: -moz-inline-flex;
+			display: -o-inline-flex;
+			display: inline-flex;
+			position: relative;
+			background-color: #b69b67;
+}
+
+@media (max-width: 1532px) {
+			/* line 628, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-up__btn {
+						font-size: 20px;
+			}
+}
+
+/* line 643, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .sing-in__body {
+			display: none;
+			background-color: #2c2c2c;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%, 0);
+			max-width: 850px;
+			padding: 0px 10px;
+			margin: 0 auto;
+			width: 100%;
+			z-index: 6;
+			border: 1px solid #b4b4b4;
+}
+
+/* line 655, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .sing-in__body.__active {
+			display: block;
+}
+
+@media (max-width: 1532px) {
+			/* line 643, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .sing-in__body {
+						max-width: 800px;
+			}
+}
+
+/* line 663, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .sing-in__content {
+			max-width: 750px;
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+			top: 0;
+			left: 0;
+			display: flex;
+			font-size: 0;
+			flex-direction: column;
+			justify-content: space-around;
+}
+
+@media (max-width: 1532px) {
+			/* line 675, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .sing-in__title {
+						font-size: 50px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 675, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .sing-in__title {
+						font-size: 40px;
+			}
+}
+
+/* line 686, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-in__title {
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			font-size: 30px;
+			color: #b4b4b4;
+			text-transform: uppercase;
+			line-height: calc(100 / 30);
+}
+
+@media (max-width: 1532px) {
+			/* line 686, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .info-sing-in__title {
+						font-size: 20px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 686, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .info-sing-in__title {
+						line-height: calc(50 / 20);
+			}
+}
+
+/* line 701, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-in__item {
+			display: flex;
+			font-size: 0;
+			justify-content: space-between;
+			position: relative;
+}
+
+@media (max-width: 680px) {
+			/* line 701, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .info-sing-in__item {
+						flex-wrap: wrap;
+						flex: 0 1 25%;
+						justify-content: space-around;
+			}
+}
+
+/* line 712, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-in__btn {
+			margin: 0px 2px 10px 2px;
+}
+
+@media (max-width: 1532px) {
+			/* line 712, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .info-sing-in__btn {
+						font-size: 20px;
+			}
+}
+
+@media (max-width: 416px) {
+			/* line 712, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .info-sing-in__btn {
+						width: 100%;
+			}
+}
+
+/* line 720, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-in__btn:first-child {
+			border: 1px solid #3b5998;
+			color: #3b5998;
+			text-decoration: none;
+			margin: 0px 2px 10px 0px;
+			transition: all 0.4s ease 0s;
+}
+
+/* line 726, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-in__btn:first-child:hover {
+			transition: all 0.4s ease 0s;
+			background-color: #3b5998;
+			color: #303030;
+}
+
+/* line 732, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-in__btn:nth-child(2) {
+			border: 1px solid #dd4b39;
+			color: #dd4b39;
+			text-decoration: none;
+}
+
+/* line 736, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-in__btn:nth-child(2):hover {
+			transition: all 0.4s ease 0s;
+			background-color: #dd4b39;
+			color: #303030;
+}
+
+/* line 742, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-in__btn:last-child {
+			border: 1px solid #1da1f2;
+			color: #1da1f2;
+			text-decoration: none;
+			margin: 0px 0px 10px 2px;
+}
+
+/* line 747, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .info-sing-in__btn:last-child:hover {
+			transition: all 0.4s ease 0s;
+			background-color: #1da1f2;
+			color: #303030;
+}
+
+/* line 757, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-in__title {
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			font-size: 30px;
+			color: #b4b4b4;
+			line-height: calc(100 / 30);
+			text-transform: uppercase;
+}
+
+@media (max-width: 1532px) {
+			/* line 757, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-in__title {
+						font-size: 20px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 757, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-in__title {
+						line-height: calc(50 / 20);
+			}
+}
+
+@media (max-width: 376px) {
+			/* line 757, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-in__title {
+						line-height: calc(30 / 20);
+			}
+}
+
+/* line 775, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-in__email {
+			margin: 0px 0px 25px 0px;
+}
+
+@media (max-width: 1532px) {
+			/* line 775, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-in__email {
+						margin: 0px 0px 15px 0px;
+			}
+}
+
+/* line 780, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-in__email input {
+			width: 100%;
+			border: 1px solid #b4b4b4;
+			background: #2c2c2c;
+			height: 70px;
+			color: #454545;
+			font-size: 30px;
+}
+
+@media (max-width: 1532px) {
+			/* line 780, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-in__email input {
+						height: 50px;
+						font-size: 20px;
+			}
+}
+
+/* line 791, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-in__email input::placeholder {
+			color: #454545;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			font-size: 30px;
+			padding: 0px 0px 0px 25px;
+}
+
+@media (max-width: 1532px) {
+			/* line 791, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-in__email input::placeholder {
+						font-size: 20px;
+			}
+}
+
+/* line 804, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-in__password {
+			flex-wrap: wrap;
+}
+
+/* line 806, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-in__password input {
+			width: 100%;
+			border: 1px solid #b4b4b4;
+			background: #2c2c2c;
+			height: 70px;
+			color: #454545;
+			font-size: 30px;
+			margin: 0px 0px 30px 0px;
+}
+
+@media (max-width: 1532px) {
+			/* line 806, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-in__password input {
+						height: 50px;
+						font-size: 20px;
+			}
+}
+
+/* line 818, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-in__password input::placeholder {
+			color: #454545;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			font-size: 30px;
+			padding: 0px 0px 0px 25px;
+}
+
+@media (max-width: 1532px) {
+			/* line 818, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-in__password input::placeholder {
+						font-size: 20px;
+			}
+}
+
+/* line 831, D:/#projects/верстка/undercover/scss/header.scss */
+.menu .form-sing-in__btn {
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #303030;
+			background-color: #b69b67;
+			margin: 0px 0px 20px 0px;
+			display: -ms-inline-flex;
+			display: -moz-inline-flex;
+			display: -o-inline-flex;
+			display: inline-flex;
+			line-height: calc(100 / 30);
+}
+
+@media (max-width: 1532px) {
+			/* line 831, D:/#projects/верстка/undercover/scss/header.scss */
+			.menu .form-sing-in__btn {
+						font-size: 20px;
+			}
+}
+
+/* line 851, D:/#projects/верстка/undercover/scss/header.scss */
+.footer-header {
+			position: relative;
+			padding: 0px 0px 20px 0px;
+}
+
+/* line 855, D:/#projects/верстка/undercover/scss/header.scss */
+.footer-header__text {
+			font-size: 20px;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 400;
+			margin: 0px 0px 15px 0px;
+			text-transform: uppercase;
+			color: #454545;
+}
+
+/* line 864, D:/#projects/верстка/undercover/scss/header.scss */
+.footer-header__arrow {
+			position: relative;
+			display: flex;
+			font-size: 0;
+			justify-content: center;
+			left: 10px;
+			animation-name: arrow;
+			animation-timing-function: ease-in-out;
+			animation-duration: 1.5s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+}
+
+/* line 874, D:/#projects/верстка/undercover/scss/header.scss */
+.footer-header__arrow span {
+			background-color: #434343;
+			width: 40px;
+			height: 2px;
+			position: relative;
+			display: -ms-inline-flex;
+			display: -moz-inline-flex;
+			display: -o-inline-flex;
+			display: inline-flex;
+}
+
+@media (max-width: 767.98px) {
+			/* line 874, D:/#projects/верстка/undercover/scss/header.scss */
+			.footer-header__arrow span {
+						width: 20px;
+			}
+}
+
+/* line 883, D:/#projects/верстка/undercover/scss/header.scss */
+.footer-header__arrow span:first-child {
+			transform: rotate(45deg);
+			left: 5px;
+			margin: 0px 0px 0px -25px;
+}
+
+/* line 888, D:/#projects/верстка/undercover/scss/header.scss */
+.footer-header__arrow span:last-child {
+			right: 5px;
+			transform: rotate(-45deg);
+}
+
+@media (max-width: 767.98px) {
+			/* line 888, D:/#projects/верстка/undercover/scss/header.scss */
+			.footer-header__arrow span:last-child {
+						right: 1px;
+			}
+}
+
+@keyframes arrow {
+			0% {
+						top: 5px;
+			}
+			100% {
+						top: 25px;
+			}
+}
+
+/* line 1, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.portfolio {
+			padding: 100px 0px;
+}
+
+@media (max-width: 1532px) {
+			/* line 1, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.portfolio {
+						padding: 80px 0px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 1, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.portfolio {
+						padding: 50px 0px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 1, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.portfolio {
+						padding: 0px 0px;
+			}
+}
+
+/* line 16, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.portfolio__title {
+			margin: 0px 0px 50px 0px;
+}
+
+/* line 21, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.categories-portfolio__title {
+			flex-direction: column;
+			left: 50%;
+			transform: translate(-50%, 0);
+			border: 1px solid #454545;
+			padding: 15px 50px 15px 15px;
+			position: relative;
+			display: -ms-inline-flex;
+			display: -moz-inline-flex;
+			display: -o-inline-flex;
+			display: inline-flex;
+			transition: all 0.3s ease 0s;
+			margin: 0px 0px 95px 0px;
+}
+
+@media (max-width: 1532px) {
+			/* line 21, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.categories-portfolio__title {
+						margin: 0px 0px 60px 0px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 21, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.categories-portfolio__title {
+						margin: 0px 0px 30px 0px;
+			}
+}
+
+/* line 37, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.categories-portfolio__title:hover {
+			color: #b69b67;
+			border: 1px solid #b69b67;
+			transition: all 0.3s ease 0s;
+}
+
+/* line 42, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.categories-portfolio__title:hover span {
+			color: #b69b67;
+			transition: all 0.3s ease 0s;
+}
+
+/* line 46, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.categories-portfolio__title:hover img:last-child {
+			display: block;
+}
+
+/* line 49, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.categories-portfolio__title:hover span:after {
+			background-color: #b69b67;
+			transition: all 0.3s ease 0s;
+}
+
+/* line 53, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.categories-portfolio__title img {
+			position: absolute;
+			right: -40px;
+			top: 25%;
+}
+
+/* line 57, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.categories-portfolio__title img:last-child {
+			display: none;
+}
+
+/* line 61, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.categories-portfolio__title > span {
+			font-size: 30px;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			color: #b4b4b4;
+			position: relative;
+}
+
+@media (max-width: 767.98px) {
+			/* line 61, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.categories-portfolio__title > span {
+						font-size: 25px;
+			}
+}
+
+/* line 70, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.categories-portfolio__title > span:after {
+			content: "";
+			position: absolute;
+			width: 115%;
+			height: 1px;
+			background-color: #454545;
+			bottom: -15.5px;
+			left: 0;
+			transition: all 0.3s ease 0s;
+}
+
+/* line 83, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.categories-portfolio__list {
+			display: flex;
+			font-size: 0;
+			flex-direction: column;
+			text-align: center;
+			position: relative;
+			margin: 15px 0px 0px 0px;
+}
+
+/* line 89, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.categories-portfolio__list li {
+			margin: 15px 0px 15px 0px;
+}
+
+/* line 94, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.categories-portfolio__link {
+			font-size: 30px;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			color: #b4b4b4;
+			text-decoration: none;
+}
+
+@media (max-width: 767.98px) {
+			/* line 94, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.categories-portfolio__link {
+						font-size: 25px;
+			}
+}
+
+/* line 103, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.categories-portfolio__link:hover {
+			color: #b69b67;
+			transition: all 0.3s ease 0s;
+}
+
+/* line 109, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.portfolio-slider {
+			flex: 1 1 auto;
+}
+
+/* line 112, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.portfolio-slider__body {
+			position: relative;
+}
+
+/* line 124, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.slider-content {
+			margin: 0px 0px 0px -15px;
+			display: flex;
+			font-size: 0;
+			flex-wrap: wrap;
+}
+
+@media (max-width: 1532px) {
+			/* line 124, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.slider-content {
+						margin: 0px 0px 0px -8px;
+			}
+}
+
+/* line 132, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.slider-content__column {
+			flex: 0 1 50%;
+			position: relative;
+			padding: 0px 15px;
+			margin: 0px 0px 15px 0px;
+}
+
+@media (max-width: 1532px) {
+			/* line 132, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.slider-content__column {
+						padding: 0px 8px;
+						margin: 0px 0px 8px 0px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 132, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.slider-content__column {
+						flex: 0 1 100%;
+			}
+}
+
+/* line 146, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.block-items {
+			display: flex;
+			font-size: 0;
+			flex-direction: column;
+			align-items: flex-end;
+			position: relative;
+			width: 100%;
+			height: 100%;
+}
+
+/* line 154, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.block-items__bg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+}
+
+/* line 161, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.block-items__bg.-active_1:after {
+			background-color: #61542148;
+}
+
+/* line 166, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.block-items__bg.-active_2:after {
+			background-color: #61542148;
+}
+
+/* line 171, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.block-items__bg.-active_3:after {
+			background-color: #61542148;
+}
+
+/* line 176, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.block-items__bg.-active_4:after {
+			background-color: #61542148;
+}
+
+/* line 180, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.block-items__bg:after {
+			content: "";
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-color: #30303085;
+}
+
+/* line 192, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.item-items-block {
+			position: relative;
+			cursor: pointer;
+			z-index: 2;
+			display: flex;
+			font-size: 0;
+			flex-direction: column;
+			justify-content: center;
+			max-width: 360px;
+			padding: 25px;
+			background-color: #b69b67;
+			height: 100%;
+}
+
+/* line 204, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.item-items-block-1.-active_1 {
+			opacity: 0;
+			visibility: hidden;
+}
+
+/* line 210, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.item-items-block-2.-active_2 {
+			opacity: 0;
+			visibility: hidden;
+}
+
+/* line 216, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.item-items-block-3.-active_3 {
+			opacity: 0;
+			visibility: hidden;
+}
+
+/* line 222, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.item-items-block-4.-active_4 {
+			opacity: 0;
+			visibility: hidden;
+}
+
+@media (max-width: 1532px) {
+			/* line 192, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.item-items-block {
+						max-width: 250px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 192, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.item-items-block {
+						max-width: 360px;
+			}
+}
+
+@media (max-width: 580px) {
+			/* line 192, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.item-items-block {
+						max-width: 250px;
+			}
+}
+
+@media (max-width: 430px) {
+			/* line 192, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.item-items-block {
+						max-width: 100%;
+			}
+}
+
+/* line 240, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.item-items-block__title {
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 400;
+			font-size: 30px;
+			color: #303030;
+			text-transform: uppercase;
+			position: relative;
+			padding: 0px 0px 15px 0px;
+			margin: 0px 0px 70px 0px;
+}
+
+@media (max-width: 1532px) {
+			/* line 240, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.item-items-block__title {
+						font-size: 25px;
+						margin: 0px 0px 30px 0px;
+			}
+}
+
+/* line 253, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.item-items-block__title:after {
+			content: "";
+			position: absolute;
+			width: 160%;
+			height: 1px;
+			background-color: #303030;
+			bottom: 0;
+			right: 0;
+}
+
+/* line 264, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.item-items-block__text {
+			font-family: "Roboto", sans-serif;
+			font-weight: 400;
+			font-size: 17px;
+			max-width: 330px;
+			margin: 0px 0px 70px 0px;
+}
+
+@media (max-width: 1532px) {
+			/* line 264, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.item-items-block__text {
+						margin: 0px 0px 30px 0px;
+						font-size: 13px;
+			}
+}
+
+/* line 276, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.item-items-block__subtext {
+			position: relative;
+			text-align: right;
+			font-size: 20px;
+			font-style: italic;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+}
+
+@media (max-width: 1532px) {
+			/* line 276, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.item-items-block__subtext {
+						font-size: 15px;
+			}
+}
+
+/* line 289, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.item-items-block--active {
+			position: absolute;
+			display: -ms-inline-flex;
+			display: -moz-inline-flex;
+			display: -o-inline-flex;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 3;
+			width: 100%;
+			top: 50%;
+			transform: translate(0, -50%);
+			opacity: 0;
+			visibility: hidden;
+			transition: all .3s ease 0s;
+}
+
+/* line 301, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.item-items-block--active > a {
+			font-size: 30px;
+			line-height: calc(30 / 20);
+			color: #303030;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 400;
+			position: relative;
+			background-color: #b69b67;
+			padding: 15px;
+			text-transform: uppercase;
+			text-decoration: none;
+}
+
+@media (max-width: 1532px) {
+			/* line 301, D:/#projects/верстка/undercover/scss/portfolio.scss */
+			.item-items-block--active > a {
+						font-size: 25px;
+			}
+}
+
+/* line 316, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.item-items-block--active.-active_1 {
+			opacity: 1;
+			visibility: visible;
+			transition: all .3s ease 0s;
+}
+
+/* line 321, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.item-items-block--active.-active_2 {
+			opacity: 1;
+			visibility: visible;
+			transition: all .3s ease 0s;
+}
+
+/* line 326, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.item-items-block--active.-active_3 {
+			opacity: 1;
+			visibility: visible;
+			transition: all .3s ease 0s;
+}
+
+/* line 331, D:/#projects/верстка/undercover/scss/portfolio.scss */
+.item-items-block--active.-active_4 {
+			opacity: 1;
+			visibility: visible;
+			transition: all .3s ease 0s;
+}
+
+/* line 1, D:/#projects/верстка/undercover/scss/services.scss */
+.services {
+			position: relative;
+			z-index: 1;
+			padding: 0px 0px 50px 0px;
+}
+
+/* line 6, D:/#projects/верстка/undercover/scss/services.scss */
+.services__container {
+			position: relative;
+}
+
+@media (max-width: 767.98px) {
+			/* line 9, D:/#projects/верстка/undercover/scss/services.scss */
+			.services__title {
+						margin: 0px 0px 20px 0px;
+			}
+}
+
+/* line 15, D:/#projects/верстка/undercover/scss/services.scss */
+.tabs {
+			position: relative;
+			display: flex;
+			font-size: 0;
+}
+
+/* line 19, D:/#projects/верстка/undercover/scss/services.scss */
+.tabs__items {
+			position: relative;
+			flex: 0 1 33.333%;
+			overflow: hidden;
+}
+
+@media (max-width: 600px) {
+			/* line 19, D:/#projects/верстка/undercover/scss/services.scss */
+			.tabs__items {
+						flex: 1 1 auto;
+						text-align: center;
+			}
+}
+
+/* line 29, D:/#projects/верстка/undercover/scss/services.scss */
+.tabs__list {
+			display: flex;
+			font-size: 0;
+			flex-direction: column;
+}
+
+/* line 32, D:/#projects/верстка/undercover/scss/services.scss */
+.tabs__list li {
+			position: relative;
+}
+
+/* line 37, D:/#projects/верстка/undercover/scss/services.scss */
+.tabs__link {
+			font-size: 30px;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			line-height: calc(100 / 30);
+			color: #b4b4b4;
+			text-transform: uppercase;
+			text-decoration: none;
+			width: 100%;
+}
+
+@media (max-width: 1532px) {
+			/* line 37, D:/#projects/верстка/undercover/scss/services.scss */
+			.tabs__link {
+						line-height: calc(80 / 30);
+						font-size: 25px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 37, D:/#projects/верстка/undercover/scss/services.scss */
+			.tabs__link {
+						font-size: 20px;
+			}
+}
+
+/* line 53, D:/#projects/верстка/undercover/scss/services.scss */
+.tabs__link-active {
+			color: #b69b67;
+			font-size: 60px;
+			position: relative;
+			transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 1532px) {
+			/* line 53, D:/#projects/верстка/undercover/scss/services.scss */
+			.tabs__link-active {
+						font-size: 40px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 53, D:/#projects/верстка/undercover/scss/services.scss */
+			.tabs__link-active {
+						font-size: 30px;
+			}
+}
+
+/* line 64, D:/#projects/верстка/undercover/scss/services.scss */
+.tabs__link-active:before {
+			content: "";
+			width: 100%;
+			height: 1px;
+			background-color: #b69b67;
+			position: absolute;
+			top: 0;
+}
+
+/* line 72, D:/#projects/верстка/undercover/scss/services.scss */
+.tabs__link-active:after {
+			content: "";
+			position: absolute;
+			width: 1000%;
+			height: 1px;
+			background-color: #454545;
+			bottom: 0px;
+			left: 0;
+}
+
+@media (max-width: 600px) {
+			/* line 72, D:/#projects/верстка/undercover/scss/services.scss */
+			.tabs__link-active:after {
+						width: 100%;
+			}
+}
+
+/* line 87, D:/#projects/верстка/undercover/scss/services.scss */
+.tabs__body {
+			flex: 1 1 auto;
+			position: relative;
+			margin: 105px 0px 0px 30px;
+}
+
+@media (max-width: 1532px) {
+			/* line 87, D:/#projects/верстка/undercover/scss/services.scss */
+			.tabs__body {
+						margin: 30px 0px 0px 20px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 87, D:/#projects/верстка/undercover/scss/services.scss */
+			.tabs__body {
+						flex: none;
+			}
+}
+
+@media (max-width: 600px) {
+			/* line 87, D:/#projects/верстка/undercover/scss/services.scss */
+			.tabs__body {
+						display: none;
+			}
+}
+
+/* line 101, D:/#projects/верстка/undercover/scss/services.scss */
+.tabs__text {
+			position: relative;
+			left: 50%;
+			transform: translate(-50%, 0);
+}
+
+@media (max-width: 600px) {
+			/* line 101, D:/#projects/верстка/undercover/scss/services.scss */
+			.tabs__text {
+						font-size: 15px;
+						font-family: "Ubuntu", sans-serif;
+						font-weight: 300;
+						color: #7c7c7c;
+						max-width: 485px;
+						text-align: center;
+						display: none;
+			}
+}
+
+/* line 119, D:/#projects/верстка/undercover/scss/services.scss */
+.block-tabs {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			display: none;
+}
+
+/* line 124, D:/#projects/верстка/undercover/scss/services.scss */
+.block-tabs-active {
+			display: block;
+}
+
+/* line 128, D:/#projects/верстка/undercover/scss/services.scss */
+.block-tabs__text {
+			position: relative;
+			font-size: 20px;
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			color: #7c7c7c;
+			max-width: 485px;
+			text-align: justify;
+			z-index: 2;
+}
+
+/* line 137, D:/#projects/верстка/undercover/scss/services.scss */
+.block-tabs__text span {
+			color: #b69b67;
+}
+
+@media (max-width: 1532px) {
+			/* line 128, D:/#projects/верстка/undercover/scss/services.scss */
+			.block-tabs__text {
+						font-size: 15px;
+						line-height: calc(25 / 15);
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 128, D:/#projects/верстка/undercover/scss/services.scss */
+			.block-tabs__text {
+						max-width: 350px;
+			}
+}
+
+@media (max-width: 630px) {
+			/* line 128, D:/#projects/верстка/undercover/scss/services.scss */
+			.block-tabs__text {
+						max-width: 300px;
+			}
+}
+
+/* line 152, D:/#projects/верстка/undercover/scss/services.scss */
+.block-tabs__bg {
+			filter: contrast(105%);
+}
+
+@media (max-width: 1532px) {
+			/* line 154, D:/#projects/верстка/undercover/scss/services.scss */
+			.block-tabs__bg img {
+						width: 600px;
+			}
+}
+
+@media (max-width: 992.98px) {
+			/* line 154, D:/#projects/верстка/undercover/scss/services.scss */
+			.block-tabs__bg img {
+						width: 500px;
+			}
+}
+
+@media (max-width: 767.98px) {
+			/* line 154, D:/#projects/верстка/undercover/scss/services.scss */
+			.block-tabs__bg img {
+						width: 400px;
+			}
+}
+
+@media (max-width: 630px) {
+			/* line 154, D:/#projects/верстка/undercover/scss/services.scss */
+			.block-tabs__bg img {
+						display: none;
+			}
+}
+
+/* line 2, D:/#projects/верстка/undercover/scss/ui.scss */
+.title {
+			font-family: "Playfair Display SC", serif;
+			font-weight: 700;
+			text-align: center;
+			color: #b4b4b4;
+			font-size: calc(40px + 22 * (100vw / 1520));
+}
+
+@media (max-width: 768px) {
+			/* line 2, D:/#projects/верстка/undercover/scss/ui.scss */
+			.title {
+						font-size: calc(40px + (20 + (20 * 0.7)) * ((100vw - 320px) / 1520));
+			}
+}
+
+/* line 14, D:/#projects/верстка/undercover/scss/ui.scss */
+.btn {
+			font-family: "Ubuntu", sans-serif;
+			font-weight: 300;
+			font-size: 30px;
+			line-height: calc(70 / 30);
+			padding: 0px 60px;
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+/* line 34, D:/#projects/верстка/undercover/scss/ui.scss */
+.slick-list {
+			overflow: hidden;
+}
+
+/* Лента слайдов */
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/*.slick-dots {
+	display: none;
+	@media (max-width: 1400px) {
+		position: relative;
+		top: 30px;
+		@include flexbox();
+		align-items: center;
+		justify-content: center;
+	}
+}
+.slick-dots li {
+	margin: 0px 10px;
+}
+/* Активная точка 
+.slick-dots li.slick-active button {
+	background-color: #000;
+}
+/* Элемент точки 
+.slick-dots li button {
+	font-size: 0;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #000;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.slider-product__slide {
+	position: relative;
+}
+.slider-product__slide .slick-arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	transform: rotate(90deg);
+	font-size: 14px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #353535;
+	letter-spacing: 2px;
+	background-color: #d7d7d7;
+	padding: 17px 30px 17px 30px;
+	transition: all 0.3s;
+	&:hover {
+		background-color: #959595;
+		transition: all 0.3s;
+	}
+	@media (max-width: 1400px) {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.slider-product__slide .slick-arrow.slick-prev {
+	left: -140px;
+	@media (max-width: 1500px) {
+		left: -100px;
+	}
+}
+.slider-product__slide .slick-arrow.slick-next {
+	right: -140px;
+	@media (max-width: 1500px) {
+		right: -100px;
+	}
+}*/
+/*# sourceMappingURL=style.css.map */

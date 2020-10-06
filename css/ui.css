@@ -1,0 +1,2 @@
+@charset "UTF-8";.title{font-family:"Playfair Display SC",serif;font-weight:700;text-align:center;color:#b4b4b4;font-size:calc(40px + 22 * (100vw / 1520))}@media (max-width:768px){.title{font-size:calc(40px + (20 + (20 * 0.7)) * ((100vw - 320px) / 1520))}}.btn{font-family:"Ubuntu",sans-serif;font-weight:300;font-size:30px;line-height:calc(70 / 30);padding:0px 60px}.slick-list{overflow:hidden}
+/*# sourceMappingURL=ui.css.map */
